@@ -21,7 +21,7 @@ task ip_extract_geocode: :environment do
           existing_ip.update(@address)
           puts "update: #{existing_ip.latitude}, #{existing_ip.longitude}, #{existing_ip.magnitude}"
         else
-          puts "else"
+          puts "ip latitude and longitude not matched"
         end
       end
 
