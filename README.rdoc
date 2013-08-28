@@ -1,0 +1,5 @@
+## World Wide Web
+Visualizing the internet one ip address at a time.
+
+### Data
+IP data gathered from the Internet Census of 2012 and geocoded using MaxMind.com's GeoIP and visualized using Chrome Experiments' WebGL.

@@ -1,0 +1,83 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  background: #000000 url(/assets/loading.gif) center center no-repeat;
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 20px;
+  height: 100%;
+}
+
+#info {
+  font-size: 11px;
+  position: absolute;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#currentInfo {
+  width: 270px;
+  position: absolute;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+a {
+  color: #aaa;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.bull {
+  padding: 0 5px;
+  color: #555;
+}
+
+#title {
+  position: absolute;
+  font-size: 20px;
+  top: 20px;
+  width: 270px;
+  left: 20px;
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.content {
+  font-size: 15px;
+  line-height: 48px;
+  text-align: left;
+  float: left;
+  width: 90px;
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+.content:hover, .content.active {
+  font-size: 15px;
+  color: #fff;
+}
+
+#ce span {
+  display: none;
+}
+
+#ce {
+  width: 107px;
+  height: 55px;
+  display: block;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  background: url(/assets/ce.png);
+}

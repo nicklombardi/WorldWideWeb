@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ip: MyString
+  latitude: MyString
+  longitude: MyString
+  magnitude: MyString
+
+two:
+  ip: MyString
+  latitude: MyString
+  longitude: MyString
+  magnitude: MyString

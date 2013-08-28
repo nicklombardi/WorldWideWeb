@@ -1,0 +1,26 @@
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #333333;
+  opacity: .8;
+}
+
+.navbar-brand {
+  float: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 7.5px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #0095FF;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: #0095FF;
+  text-decoration: none;
+  background-color: transparent;
+}
