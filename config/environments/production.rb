@@ -39,7 +39,22 @@ WorldWideWeb::Application.configure do
   # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
 
   # Use a different cache store in production
+  client = Dalli::Client.new
+  config.action_dispatch.rack_cache = {
+    metastore: client,
+    entitystore: client,
+    allow_reload: false
+  }
+
   config.cache_store = :dalli_store
+
+  config.serve_static_assets = true
+
+  config.static_cache_control = "public, max-age=2592000"
+
+  config.assets.digest = true
+
+  config.action_controller.perform_caching = true
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server
   # config.action_controller.asset_host = "http://assets.example.com"
