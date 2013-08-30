@@ -50,5 +50,7 @@ module WorldWideWeb
 
     config.assets.paths << Rails.root.join("app", "assets", "data")
 
+    config.middleware.use Rack::GoogleAnalytics, :tracker => 'UA-43668527-1'
+
   end
 end
