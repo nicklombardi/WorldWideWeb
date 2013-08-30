@@ -23,7 +23,7 @@ gem 'rack-google-analytics'
 gem "rack-timeout"
 
 # gem 'memcachier'
-# gem 'dalli'
+gem 'dalli'
 
 # gem 'redis'
 # gem 'redis-store'

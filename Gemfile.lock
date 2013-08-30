@@ -40,6 +40,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
+    dalli (2.6.4)
     erubis (2.7.0)
     execjs (2.0.0)
     geoip-c (0.9.0)
@@ -118,6 +119,7 @@ DEPENDENCIES
   actionpack-action_caching
   actionpack-page_caching
   coffee-rails (~> 4.0.0)
+  dalli
   geoip-c
   jquery-rails
   pg
