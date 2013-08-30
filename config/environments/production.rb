@@ -48,24 +48,20 @@ WorldWideWeb::Application.configure do
 
   # config.cache_store = :dalli_store
 
-  config.serve_static_assets = true
+  # config.serve_static_assets = true
 
-  config.cache_store = :redis_store, 'redis://localhost:6379/0/cache', { expires_in: 90.minutes }
+  # config.cache_store = :redis_store, 'redis://localhost:6379/0/cache', { expires_in: 90.minutes }
 
-  config.action_dispatch.rack_cache = {
-    metastore:   'redis://localhost:6379/0/metastore',
-    entitystore: 'redis://localhost:6379/0/entitystore'
-  }
+  # config.action_dispatch.rack_cache = {
+  #   metastore:   'redis://localhost:6379/0/metastore',
+  #   entitystore: 'redis://localhost:6379/0/entitystore'
+  # }
 
-  config.static_cache_control = "public, max-age=2592000"
+  # config.static_cache_control = "public, max-age=2592000"
 
-  config.assets.digest = true
+  # config.assets.digest = true
 
-  config.action_controller.perform_caching = true
-
-  # config.assets.precompile += %w( dataset.json )
-
-  # config.assets.precompile += WorldWideWeb.assets
+  # config.action_controller.perform_caching = true
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server
   # config.action_controller.asset_host = "http://assets.example.com"
