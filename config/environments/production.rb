@@ -63,9 +63,9 @@ WorldWideWeb::Application.configure do
 
   config.action_controller.perform_caching = true
 
-  config.assets.precompile += %w( dataset.json )
+  # config.assets.precompile += %w( dataset.json )
 
-  config.assets.precompile += WorldWideWeb.assets
+  # config.assets.precompile += WorldWideWeb.assets
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server
   # config.action_controller.asset_host = "http://assets.example.com"
