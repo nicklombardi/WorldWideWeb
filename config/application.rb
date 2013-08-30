@@ -7,11 +7,11 @@ Bundler.require(:default, Rails.env)
 module WorldWideWeb
   class Application < Rails::Application
 
-    config.cache_store = :redis_store, 'redis://127.0.0.1:6379/0/cache', { expires_in: 90.minutes }
+    config.cache_store = :redis_store, 'redis://localhost:6379/0/cache', { expires_in: 90.minutes }
 
     config.action_dispatch.rack_cache = {
-      metastore:   'redis://127.0.0.1:6379/0/metastore',
-      entitystore: 'redis://127.0.0.1:6379/0/entitystore'
+      metastore:   'redis://localhost:6379/0/metastore',
+      entitystore: 'redis://localhost:6379/0/entitystore'
     }
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
