@@ -22,3 +22,5 @@ gem 'pry-rails'
 gem 'rack-google-analytics'
 gem "rack-timeout"
 
+gem 'memcachier'
+gem 'dalli'
