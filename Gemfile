@@ -22,8 +22,13 @@ gem 'pry-rails'
 gem 'rack-google-analytics'
 gem "rack-timeout"
 
+group :production do
+  gem 'unicorn'
+  gem 'dalli'
+end
+
+
 # gem 'memcachier'
-gem 'dalli'
 
 # gem 'redis'
 # gem 'redis-store'
