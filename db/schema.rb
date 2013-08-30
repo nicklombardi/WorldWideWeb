@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20130824020256) do
   create_table "addresses", force: true do |t|
     t.integer  "latitude"
     t.integer  "longitude"
-    t.float    "magnitude"
+    t.float    "magnitude",  default: 0.0
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -4,7 +4,8 @@ class AddressesController < ApplicationController
   # GET /addresses
   # GET /addresses.json
   def index
-    @addresses = Address.all
+    @addresses = Address.all.map { |a| [a.latitude, a.longitude, a.magnitude] }.flatten
+    render json: [["Connectivity",[@addresses]],["Population",[@addresses]]]
   end
 
   # GET /addresses/1
