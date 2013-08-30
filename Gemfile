@@ -24,3 +24,4 @@ gem "rack-timeout"
 
 gem 'memcachier'
 gem 'dalli'
+gem 'rack-cache'
