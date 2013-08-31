@@ -27,11 +27,10 @@ group :production do
   gem 'dalli'
 end
 
-
-# gem 'memcachier'
+gem 'memcachier'
+gem 'rack-cache'
 
 # gem 'redis'
 # gem 'redis-store'
 # gem 'redis-rails'
 # gem 'redis-rack-cache'
-# gem 'rack-cache'
