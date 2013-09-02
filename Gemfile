@@ -25,6 +25,7 @@ gem "rack-timeout"
 group :production do
   gem 'unicorn'
   gem 'dalli'
+  gem 'newrelic_rpm'
 end
 
 gem 'memcachier'
